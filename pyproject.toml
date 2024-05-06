@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "duckgs"
+dependencies = [
+    "duckdb",
+    "fsspec",
+    "gcsfs",
+    "google-cloud-storage",
+    "pandas",
+    "rich",
+    "sqlparse",
+    "tabulate",
+    "typer",
+    "ipython",
+]
+requires-python = ">=3.7,<3.12"
+dynamic = ["version"]
+
+
+[project.scripts]
+duckgs = "duckgs:app"

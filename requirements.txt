@@ -1,0 +1,9 @@
+duckdb
+fsspec
+gcsfs
+google-cloud-storage
+pandas
+rich
+sqlparse
+typer
+tabulate
